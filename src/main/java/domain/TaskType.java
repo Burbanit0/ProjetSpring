@@ -10,4 +10,8 @@ public class TaskType {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	private String label;
+	
+	public TaskType(long Id, ) {
+		
+	}
 }
