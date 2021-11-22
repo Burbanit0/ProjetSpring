@@ -13,7 +13,10 @@ import lombok.Data;
 import lombok.ToString;
 @Entity
 public class ChangeLog {
-    private @Id@GeneratedValue Long id;
+	@Id
+	@GeneratedValue
+    private  Long id;
+	
     private LocalDateTime occured;
     
     @ManyToOne
@@ -27,6 +30,5 @@ public class ChangeLog {
     private TaskStatus sourceStatus;
     
     public ChangeLog() {
-        
     }
 }

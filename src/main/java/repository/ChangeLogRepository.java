@@ -7,5 +7,5 @@ import domain.ChangeLog;
 
 @Repository
 public interface ChangeLogRepository extends JpaRepository<ChangeLog, Long>{
-
+	
 }
