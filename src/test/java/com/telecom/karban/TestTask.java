@@ -19,7 +19,7 @@ import repository.TaskTypeRepository;
 @RunWith(SpringRunner.class)
 @ActiveProfiles(profiles = "test")
 
-public class TaskRepositoryTest {
+public class TestTask {
 	@Autowired
 	private TaskRepository taskRepository;
 	
@@ -34,17 +34,4 @@ public class TaskRepositoryTest {
 		Collection<Task> tasks = this.taskRepository.findAll();
 		Assert.assertEquals(1, tasks.size());
 	}	
-	
-	@Test
-	public void testSaveTask() {
-		Task task = new Task();
-		taskRepository.save(task);
-		
-		
-	}
-	
-	@Test
-	public void testFindTask() {
-		Task task = taskRepository.
-	}
 }

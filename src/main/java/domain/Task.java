@@ -51,6 +51,7 @@ public class Task {
 	}
 	
 	public void addDeveloper(Developer developer) {
+		developer.getTasks().add(this);
 		this.developers.add(developer);
 	}
 }

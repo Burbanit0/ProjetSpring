@@ -40,8 +40,8 @@ public class LoadData {
 			Developer dev2 = new Developer();
 			dev2.setEmail("dev2@gmail.com");
 			dev2.setFirstname("dev2");
-			dev2.setLastname("dev2_1");
-			dev2.setStartContract(LocalDate.of(2018, Month.NOVEMBER, 15));
+			dev2.setLastname("dev_2");
+			dev2.setStartContract(LocalDate.of(2019, Month.MARCH, 12));
 			dev2.setPassword("dev2");
 			developerRepository.save(dev2);
 			
@@ -62,8 +62,8 @@ public class LoadData {
 		Developer dev1 = new Developer();
 		dev1.setEmail("dev1@gmail.com");
 		dev1.setFirstname("dev1");
-		dev1.setLastname("dev1_1");
-		dev1.setStartContract(LocalDate.of(2020, Month.DECEMBER, 5));
+		dev1.setLastname("dev_1");
+		dev1.setStartContract(LocalDate.of(2021, Month.AUGUST, 6));
 		dev1.setPassword("dev1");
 		developerRepository.save(dev1);
 		

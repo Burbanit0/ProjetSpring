@@ -37,16 +37,5 @@ public class Developer {
     public Developer() {
         this.tasks = new HashSet<>();
     }
-    
-    public void addDeveloper(Long id, String firstname, String lastname, String password, String email, LocalDate startContract, Set<Task> tasks) {
-		Developer dev = new Developer();
-		dev.id = id;
-		dev.setFirstname(firstname);
-		dev.setLastname(lastname);
-		dev.setPassword(password);
-		dev.setEmail(email);
-		dev.setStartContract(startContract);
-	}
-    
 }
 

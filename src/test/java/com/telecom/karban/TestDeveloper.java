@@ -16,10 +16,10 @@ import repository.DeveloperRepository;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-@ContextConfiguration(classes = {KanbanApplication.class})
+@ContextConfiguration(classes = {KarbanApplication.class})
 @ActiveProfiles(profiles = "test")
 
-public class DeveloperRepositoryTests {
+public class TestDeveloper {
 
 	@Autowired
 	private DeveloperRepository developerRepository;
@@ -29,6 +29,4 @@ public class DeveloperRepositoryTests {
 		Collection<Developer> tasks = this.developerRepository.findAll();
 		Assert.assertEquals(2, tasks.size());
 	}
-
-	
 }
