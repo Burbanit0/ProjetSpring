@@ -53,29 +53,5 @@ public class Task {
 	public void addDeveloper(Developer developer) {
 		this.developers.add(developer);
 	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public int getNbHoursForecast() {
-		return nbHoursForecast;
-	}
-
-	public void setNbHoursForecast(int nbHoursForecast) {
-		this.nbHoursForecast = nbHoursForecast;
-	}
-
-	public int getNbHoursReal() {
-		return nbHoursReal;
-	}
-
-	public void setNbHoursReal(int nbHoursReal) {
-		this.nbHoursReal = nbHoursReal;
-	}
 }
     

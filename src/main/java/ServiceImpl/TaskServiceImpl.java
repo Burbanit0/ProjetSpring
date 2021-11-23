@@ -14,7 +14,7 @@ import repository.TaskStatusRepository;
 import repository.TaskTypeRepository;
 import service.TaskService;
 
-public class TaskServiceImpl {
+public class TaskServiceImpl implements TaskService{
 	@Autowired
 	private TaskRepository taskRepository;
 	
@@ -60,5 +60,21 @@ public class TaskServiceImpl {
 		}
 		return taskRepository.save(task);
 
+	}
+
+	public TaskStatusRepository getTaskStatusRepository() {
+		return taskStatusRepository;
+	}
+
+	public void setTaskStatusRepository(TaskStatusRepository taskStatusRepository) {
+		this.taskStatusRepository = taskStatusRepository;
+	}
+
+	public TaskTypeRepository getTaskTypeRepository() {
+		return taskTypeRepository;
+	}
+
+	public void setTaskTypeRepository(TaskTypeRepository taskTypeRepository) {
+		this.taskTypeRepository = taskTypeRepository;
 	}
 }
